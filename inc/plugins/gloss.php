@@ -43,16 +43,20 @@ class GlossMarkupParser {
 	public $above;
 	private $pos;
 	public $parts;
-	
+
+	function postformat($text) {
+		return str_replace(array('[[[', ']]]'), array('{', '}'), $text);
+	}
+
 	function gloss_map_function($gloss) {
 		return '<span class="gloss-subunit gloss-annotation"><span class="gloss-hidden-text">{</span>'
-			. $gloss
+			. $this->postformat($gloss)
 			. '<span class="gloss-hidden-text">}</span></span>';
 	}
 	
 	function gloss_get_html($text, $glosses) {
 		$glosses = explode('}{', ltrim(rtrim($glosses, '}'), '{'));
-		$text = '<span class="gloss-subunit">'  . $text . '</span>';
+		$text = '<span class="gloss-subunit">'  . $this->postformat($text) . '</span>';
 		$glosses_html = implode('', array_map(array($this, 'gloss_map_function'), $glosses));
 		return '<span class="glossed-unit-' . $this->pos . '">'
 		 . ($this->above ? $glosses_html . $text : $text . $glosses_html)

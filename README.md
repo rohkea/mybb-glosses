@@ -33,8 +33,7 @@ in double backticks:
 statement{заявление}.[/gloss]```
 
 Glossed text cannot contain brackets. If you need them, replace them with
-triple square brackets:
-```[gloss][[[Test]]]{[[[test]]]}[/gloss]```
+triple square brackets.
 
 
 Arguments for the [gloss] BB-code
