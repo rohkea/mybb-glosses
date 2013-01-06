@@ -46,7 +46,8 @@ Most arguments just end up in a class with a ``gloss-`` prefix. So, for the
 example above to actually do something, you have to define a CSS rule for
 ``.gloss-test`` class, like this:
 ```css
-.gloss-test { color: navy }```
+.gloss-test { color: navy }
+```
 
 Equation signs (=) are replaced with - in arguments, so [gloss size=large]
 will end up as a class .gloss-size-large.
