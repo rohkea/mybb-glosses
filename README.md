@@ -18,7 +18,7 @@ Gloss markup
 ------------
 
 Glosses for MyBB adds the support for the following BB-code markup:
-        [gloss]Das{this} ist{is} ein{an} Beispiel{example}.[/gloss]
+```[gloss]Das{this} ist{is} ein{an} Beispiel{example}.[/gloss]```
 
 Glosses follow the word, enclosed in brackets. A word can have more than
 one gloss.
@@ -34,7 +34,8 @@ statement{заявление}.[/gloss]```
 
 Glossed text cannot contain brackets. If you need them, replace them with
 triple square brackets:
-```[gloss][[[Test]]]{[[[test]]]}[/gloss].```
+```[gloss][[[Test]]]{[[[test]]]}[/gloss]```
+
 
 ### Arguments for the [gloss] BB-code
 
