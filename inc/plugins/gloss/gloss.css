@@ -1,0 +1,17 @@
+.glossed-unit-below { display: inline-block; vertical-align: top; }
+.glossed-unit-above { display: inline-block; vertical-align: bottom; }
+.gloss-subunit { display: block; }
+.gloss-annotation {font-size: 10px; line-height: 65%;}
+.gloss-hidden-text { display: inline-block; width: 0; overflow: hidden; }
+.gloss-nobr-below { display: inline-block; vertical-align: top; }
+.gloss-nobr-above { display: inline-block; vertical-align: bottom; }
+.gloss-larger, .gloss-larger-1 { font-size: 150%; line-height: 120%; }
+.gloss-larger-2 { font-size: 200%; line-height: 120%; }
+.gloss-larger-3 { font-size: 250%; line-height: 120%; }
+.gloss-size-xx-small { font-size: xx-small; }
+.gloss-size-x-small { font-size: x-small; }
+.gloss-size-small { font-size: small; }
+.gloss-size-medium { font-size: medium; }
+.gloss-size-large { font-size: large; }
+.gloss-size-x-large { font-size: x-large; }
+.gloss-size-xx-large { font-size: xx-large; }
