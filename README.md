@@ -37,7 +37,8 @@ triple square brackets:
 ```[gloss][[[Test]]]{[[[test]]]}[/gloss]```
 
 
-### Arguments for the [gloss] BB-code
+Arguments for the [gloss] BB-code
+---------------------------------
 
 Glosses can accept arbitrary arguments:
 ```[gloss test]Это{this.NOM.SG.N} пример-Ø{example-NOM.SG}.[/gloss]```
@@ -68,3 +69,4 @@ Feedback
 I will appreciate any feedback about the code, its performance, as well as bugs
 and problems with this plugin. Feel free to contact me at
 dmytro_kushnariov@lavabit.com.
+
