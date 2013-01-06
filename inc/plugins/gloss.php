@@ -121,11 +121,11 @@ class GlossMarkupParser {
 		$this->strip_spaces = $strip_spaces;
 		$lines = array_map(array($this, 'convert_line'), explode("\n", $text));
 		
-		return ($dir == 'rtl' ? '<p style="direction: rtl;"' : '<p style="direction: ltr;"')
+		return ($dir == 'rtl' ? '<span style="direction: rtl;"' : '<span style="direction: ltr;"')
 			. ($classes ? " class='$classes'" : '')
 			. '>'
 			. implode('<br />', $lines)
-			. '</p>';
+			. '</span>';
 	}
 	
 	public static function conv($t, $args) {
