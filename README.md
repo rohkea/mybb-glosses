@@ -25,26 +25,27 @@ one gloss.
 
 If a unit larger than word needs to be glossed, it can be enclosed in double
 backticks:
-        [gloss]``Without you``{сенсыз}[/gloss]
+```[gloss]``Without you``{сенсыз}[/gloss]```
 
 Main words cannot contain BB-codes. If you need to include one, enclose it
 in double backticks:
-        [gloss]This{Это} is a ``[b]bold[/b]``{полужирное, смелое}
-        statement{заявление}.[/gloss]
+```[gloss]This{Это} is a ``[b]bold[/b]``{полужирное, смелое}
+statement{заявление}.[/gloss]```
 
 Glossed text cannot contain brackets. If you need them, replace them with
 triple square brackets:
-        [gloss][[[Test]]]{[[[test]]]}[/gloss].
+```[gloss][[[Test]]]{[[[test]]]}[/gloss].```
 
 ### Arguments for the [gloss] BB-code
 
 Glosses can accept arbitrary arguments:
-        [gloss test]Это{this.NOM.SG.N} пример-Ø{example-NOM.SG}.[/gloss]
+```[gloss test]Это{this.NOM.SG.N} пример-Ø{example-NOM.SG}.[/gloss]```
 
 Most arguments just end up in a class with a ``gloss-`` prefix. So, for the
 example above to actually do something, you have to define a CSS rule for
 ``.gloss-test`` class, like this:
-        .gloss-test { color: navy }
+```css
+.gloss-test { color: navy }```
 
 Equation signs (=) are replaced with - in arguments, so [gloss size=large]
 will end up as a class .gloss-size-large.
@@ -65,4 +66,4 @@ Feedback
 
 I will appreciate any feedback about the code, its performance, as well as bugs
 and problems with this plugin. Feel free to contact me at
-_dmytro_kushnariov@lavabit.com_.
+dmytro_kushnariov@lavabit.com.
