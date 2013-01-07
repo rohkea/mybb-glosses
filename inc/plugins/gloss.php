@@ -32,7 +32,7 @@ function gloss_info()
 		"author"        => "Dmitry Kushnariov",
 		"authorsite"    => "http://github.com/rohkea/",
 		"version"       => "1.00",
-		"guid"          => "",
+		"guid"          => "34a6d11ef2094ff979e1a85e06e8119a",
 		"compatibility" => "*"
 	);
 }
