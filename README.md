@@ -18,19 +18,25 @@ Gloss markup
 ------------
 
 Glosses for MyBB adds the support for the following BB-code markup:
-```[gloss]Das{this} ist{is} ein{an} Beispiel{example}.[/gloss]```
+```
+[gloss]Das{this} ist{is} ein{an} Beispiel{example}.[/gloss]
+```
 
 Glosses follow the word, enclosed in brackets. A word can have more than
 one gloss.
 
 If a unit larger than word needs to be glossed, it can be enclosed in double
 backticks:
-```[gloss]``Without you``{сенсыз}[/gloss]```
+```
+[gloss]``Without you``{сенсыз}[/gloss]
+```
 
 Main words cannot contain BB-codes. If you need to include one, enclose it
 in double backticks:
-```[gloss]This{Это} is a ``[b]bold[/b]``{полужирное, смелое}
-statement{заявление}.[/gloss]```
+```
+[gloss]This{Это} is a ``[b]bold[/b]``{полужирное, смелое}
+statement{заявление}.[/gloss]
+```
 
 Glossed text cannot contain brackets. If you need them, replace them with
 triple square brackets.
@@ -40,17 +46,20 @@ Arguments for the [gloss] BB-code
 ---------------------------------
 
 Glosses can accept arbitrary arguments:
-```[gloss test]Это{this.NOM.SG.N} пример-Ø{example-NOM.SG}.[/gloss]```
+```
+[gloss test]Это{this.NOM.SG.N} пример-Ø{example-NOM.SG}.[/gloss]
+```
 
 Most arguments just end up in a class with a ``gloss-`` prefix. So, for the
 example above to actually do something, you have to define a CSS rule for
 ``.gloss-test`` class, like this:
 ```css
-.gloss-test { color: navy }
+.gloss-test { color: navy; }
 ```
 
 Equation signs (=) are replaced with - in arguments, so [gloss size=large]
-will end up as a class .gloss-size-large.
+will end up as a class .gloss-size-large. In fact, all characters except
+the basic Latin letters and numbers get replaced with hyphens.
 
 Some arguments have predefined meaning:
 
@@ -62,6 +71,13 @@ furigana in Japanese;
 and Herbew, but consider using romanisation instead;
 * ``size=xx-small``, ``size=small``, ``size=medium``, ``size=large``,
 ``size=x-large``, ``size=xx-large`` change the font size (editable via CSS).
+
+Known bugs
+----------
+
+If the line height is larger than main text, the glosses below the text
+don’t align nicely with the rest of the text. (So don’t include glosses above
+the text and below it in one paragraph.)
 
 Feedback
 --------
