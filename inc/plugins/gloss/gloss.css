@@ -15,3 +15,6 @@
 .gloss-size-large { font-size: large; }
 .gloss-size-x-large { font-size: x-large; }
 .gloss-size-xx-large { font-size: xx-large; }
+
+.gloss-i .gloss-subunit { font-style: italic; }
+.gloss-i .gloss-subunit.gloss-annotation { font-style: normal; }

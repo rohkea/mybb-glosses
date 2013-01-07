@@ -69,6 +69,8 @@ output; useful for Japanese and Chinese;
 furigana in Japanese;
 * ``rtl`` forces text to be displayed right-to-left; may be useful for Arabic
 and Herbew, but consider using romanisation instead;
+* ``i`` makes the main text (but not glosses) italic (as in the examples for
+Leipzig glossing rules; editable via CSS);
 * ``size=xx-small``, ``size=small``, ``size=medium``, ``size=large``,
 ``size=x-large``, ``size=xx-large`` change the font size (editable via CSS).
 
